@@ -1,0 +1,11 @@
+import { DeriveBalancesAll, DeriveStakingAccount } from '@polkadot/api-derive/types';
+import { UseAccountInfo } from '@polkadot/react-hooks/types';
+import { KeyringJson$Meta } from '@polkadot/ui-keyring/types';
+import { AccountOverrides, Override } from '../types';
+export declare const anAccount: () => AccountOverrides;
+export declare const anAccountWithBalance: (balance: Override<DeriveBalancesAll>) => AccountOverrides;
+export declare const anAccountWithInfo: (info: Override<UseAccountInfo>) => AccountOverrides;
+export declare const anAccountWithMeta: (meta: Override<KeyringJson$Meta>) => AccountOverrides;
+export declare const anAccountWithStaking: (staking: Override<DeriveStakingAccount>) => AccountOverrides;
+export declare const anAccountWithBalanceAndMeta: (balance: Override<DeriveBalancesAll>, meta: Override<KeyringJson$Meta>) => AccountOverrides;
+export declare const anAccountWithInfoAndMeta: (info: Override<UseAccountInfo>, meta: Override<KeyringJson$Meta>) => AccountOverrides;

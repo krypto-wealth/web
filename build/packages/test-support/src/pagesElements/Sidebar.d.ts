@@ -1,0 +1,31 @@
+import { JudgementTag } from './JudgementTag';
+export declare class Sidebar {
+    sidebar: HTMLElement;
+    constructor(sidebar: HTMLElement);
+    changeAccountName(accountName: string): Promise<void>;
+    typeAccountName(accountName: string): Promise<void>;
+    selectTag(tagName: string): Promise<void>;
+    assertAccountInput(expectedInput: string): Promise<void>;
+    assertAccountName(expectedAccountName: string): Promise<void>;
+    assertJudgement(judgement: string): Promise<void>;
+    assertTags(tagsContent: string): Promise<void>;
+    close(): Promise<void>;
+    cancel(): void;
+    edit(): void;
+    save(): void;
+    clickByText(text: string): Promise<void>;
+    clickByTestId(testId: string): Promise<void>;
+    findByText(text: string): Promise<HTMLElement>;
+    findByTestId(testId: string): Promise<HTMLElement>;
+    findByRole(role: string): Promise<HTMLElement>;
+    findAllByRole(role: string): Promise<HTMLElement[]>;
+    getByTestId(testId: string): HTMLElement;
+    getByRole(roleName: string, options?: Record<string, unknown>): HTMLElement;
+    queryByRole(roleName: string, options?: Record<string, unknown>): HTMLElement | null;
+    queryByTestId(testId: string): HTMLElement | null;
+    findSubs(): Promise<HTMLElement[]>;
+    openSubsModal(): Promise<HTMLElement>;
+    getJudgement(judgementName: string): Promise<JudgementTag>;
+    private clickButton;
+    private openTagsDropdown;
+}
