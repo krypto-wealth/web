@@ -20,7 +20,7 @@ export const prodChains: EndpointOption[] = [
     info: 'kwe',
     text: 'Krypto Wealth Testnet',
     providers: {
-      'Krypto Wealth Network': 'wss://wss.kwe.oracol.org:4443'
+      'Krypto Wealth Network': 'wss://wss.krypto-wealth.org'
     }
   },
  
